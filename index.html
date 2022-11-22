@@ -5,37 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript Drum-kit project</title>
+    <title>javaScript Drum kit project</title>
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
-    <div class="button-container">
-        <button class="btn1 btn">a</button>
-        <button class="btn2 btn">s</button>
-        <button class="btn3 btn">d</button>
-        <button class="btn4 btn">f</button>
-        <button class="btn5 btn">g</button>
-        <button class="btn6 btn">h</button>
-        <button class="btn7 btn">j</button>
-        <button class="btn8 btn">k</button>
-        <button class="btn9 btn">l</button>
+    <div class="btn-container">
+        <button data-key="a" class="key">a</button>
+        <button data-key="s" class="key">s</button>
+        <button data-key="d" class="key">d</button>
+        <button data-key="f" class="key">f</button>
+        <button data-key="g" class="key">g</button>
+        <button data-key="h" class="key">h</button>
+        <button data-key="j" class="key">j</button>
+        <button data-key="k" class="key">k</button>
+        <button data-key="l" class="key">l</button>
     </div>
-
-    <!-- audio files  -->
     <div class="audio-container">
-        <audio src="./sounds/sound-a.mp3" class="audio a">yo</audio>
-        <audio src="./sounds/sound-s.mp3" class="audio s"></audio>
-        <audio src="./sounds/sound-d.mp3" class="audio d"></audio>
-        <audio src="./sounds/sound-f.mp3" class="audio f"></audio>
-        <audio src="./sounds/sound-g.mp3" class="audio g"></audio>
-        <audio src="./sounds/sound-h.mp3" class="audio h"></audio>
-        <audio src="./sounds/sound-j.mp3" class="audio j"></audio>
-        <audio src="./sounds/sound-k.mp3" class="audio k"></audio>
-        <audio src="./sounds/sound-l.mp3" class="audio l"></audio>
+        <audio data-key="a" src="./sounds/sound-a.mp3"></audio>
+        <audio data-key="s" src="./sounds/sound-s.mp3"></audio>
+        <audio data-key="d" src="./sounds/sound-d.mp3"></audio>
+        <audio data-key="f" src="./sounds/sound-f.mp3"></audio>
+        <audio data-key="g" src="./sounds/sound-g.mp3"></audio>
+        <audio data-key="h" src="./sounds/sound-h.mp3"></audio>
+        <audio data-key="j" src="./sounds/sound-j.mp3"></audio>
+        <audio data-key="k" src="./sounds/sound-k.mp3"></audio>
+        <audio data-key="l" src="./sounds/sound-l.mp3"></audio>
+
+
+
+        <!-- script code  -->
+        <script src="./js/scripts.js"></script>
     </div>
-    <!-- scripts js  -->
-    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
